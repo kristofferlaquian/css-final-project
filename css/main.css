@@ -17,7 +17,7 @@
 
 .logo {
     color: white;
-    font-size:1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
@@ -43,4 +43,92 @@
 
 .nav-links a:hover {
     background-color: white;
+}
+
+.hero {
+    background: url('/Images/AssortedCorndogs.jpg') center/cover no-repeat;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    background-color: rgba(0,0,0,0.5);
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+
+.btn {   
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #EF4444;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #B91C1C;
+}
+
+.goal {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F9FAFB;
+}
+
+.goal h2 {
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+.goal {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #F9FAFB;
+}
+
+.goal h2 {
+  color: #1E3A8A;
+  margin-bottom: 10px;
+}
+
+.best-seller {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.best-seller .text {
+  flex: 1;
+  padding: 20px;
+}
+
+.best-seller .image {
+  flex: 1;
+  text-align: center;
+}
+
+.best-seller img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }

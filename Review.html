@@ -16,13 +16,13 @@
                 <li><a href="Main.html">Home</a></li>
                 <li><a href="Menu.html">Menu</a></li>
                 <li><a href="About.html">About Us</a></li>
-                <li><a href="Review.html" class="active">Leave a Review</a></li>
+                <li><a href="Review.html" class="active">Leave a Review!</a></li>
             </ul>
         </nav>
     </header>
-    <form action="https://api.web3forms.com/submit">
+    <form method="post" action="https://api.web3forms.com/submit">
         <h2>Leave a Review!</h2>
-          <input type="hidden" name="access_key" value="4305a657-0835-457e-8c00-a1864f872293">
+          <input type="hidden" name="access_key" value="f0db3d49-35e2-44b6-9b04-9c94d753a7ba">
           
           <label for="firstname">First Name:</label>
           <input id="firstname" type="text" name="first name" required minlength="3" maxlength="20" placeholder="First Name">
@@ -37,15 +37,21 @@
           <br>
 
           <label for="cphone">Phone Number:</label>
-          <input type="tel" pattern="[0-9]+" title="Numbers Only" name="cellnumber" id="cphone" required placeholder="(123) 456-7890" min="8" maxlength="12">
+          <input type="tel" pattern="[0-9]+" title="Numbers Only" name="cellnumber" id="cphone" required placeholder="670123456" min="8" maxlength="18">
           <br>
 
           <label for="Note">Share Your Experience!</label>
-          <textarea name="message" id="Note"></textarea>
+          <textarea name="message" id="Note" placeholder="Tell us anything!" maxlength="300"></textarea>
 
-          <button type="submit">Finish Form</button>
+          <div class="h-captcha" data-captcha="true"></div>
+
+          <button type="submit" href="Review.html">Finish Form</button>
     </form>
 
+     <footer>
+        <p>&copy; 2025 Island CornDogs</p>
+    </footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
