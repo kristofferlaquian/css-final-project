@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=!, initial-scale=1.0">
-    <title>Website Project - Kristoffer Laquian</title>
-    <link rel="stylesheet" href="/css/review.css">
+    <title>Leave a Review! - Kristoffer Laquian</title>
+    <link rel="stylesheet" href="review.css">
 </head>
 
 <body>
@@ -13,17 +13,19 @@
         <nav class="navbar">
             <div class="logo">Island CornDogs</div>
             <ul class="nav-links">
-                <li><a href="Main.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="Menu.html">Menu</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="Review.html" class="active">Leave a Review!</a></li>
             </ul>
         </nav>
     </header>
-    <form method="post" action="https://api.web3forms.com/submit">
+    <form method="post" action="https://api.web3forms.com/submit" target="_blank">
         <h2>Leave a Review!</h2>
           <input type="hidden" name="access_key" value="f0db3d49-35e2-44b6-9b04-9c94d753a7ba">
-          
+          <input type="hidden" name="redirect" value="http://krisl-assignment03.gt.tc/redirect.html">
+
+
           <label for="firstname">First Name:</label>
           <input id="firstname" type="text" name="first name" required minlength="3" maxlength="20" placeholder="First Name">
           <br>
@@ -37,7 +39,7 @@
           <br>
 
           <label for="cphone">Phone Number:</label>
-          <input type="tel" pattern="[0-9]+" title="Numbers Only" name="cellnumber" id="cphone" required placeholder="670123456" min="8" maxlength="18">
+          <input type="tel" pattern="[0-9]+" title="Numbers Only" name="cellnumber" id="cphone" required placeholder="6701234567" min="8" maxlength="18">
           <br>
 
           <label for="Note">Share Your Experience!</label>
@@ -45,7 +47,7 @@
 
           <div class="h-captcha" data-captcha="true"></div>
 
-          <button type="submit" href="Review.html">Finish Form</button>
+          <button type="submit" value="redirect.html">Finish Form</button>
     </form>
 
      <footer>

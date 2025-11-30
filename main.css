@@ -48,7 +48,7 @@
 
 /*Main Page*/
 .hero {
-    background: url('/Images/AssortedCorndogs.jpg') center/cover no-repeat;
+    background: url('AssortedCorndogs.jpg') center/cover no-repeat;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -118,6 +118,7 @@
   flex: 1;
   padding: 20px;
   color: #1E3A8A;
+  text-align: right;
 }
 
 .best-seller .image {
@@ -127,6 +128,7 @@
 
 .best-seller img {
   max-width: 100%;
+  max-height: 500px ;
   border-radius: 12px;
   box-shadow: 0 4px 25px rgba(0,0,0,1);
 }
