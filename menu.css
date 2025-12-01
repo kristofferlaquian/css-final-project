@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E3A8A; 
+    background-color: #1E3A8A;
     padding: 15px 50px;
 }
 
@@ -29,20 +29,25 @@
 }
 
 .nav-links a {
-    color:white;
+    color: white;
     text-decoration: none;
     transition: color, background-color 0.3s;
     display: block;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-.nav-links a:hover, .nav-links a.active {
-    color: #EF4444; /* Red */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #EF4444;
+    /* Red */
+    font-weight: bold;
 }
 
 .nav-links a:hover {
     background-color: white;
+    font-weight: bold;
 }
 
 /*Menu*/
@@ -76,13 +81,13 @@
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .menu-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     background-color: #1E3A8A50;
 }
 
@@ -114,9 +119,62 @@
 
 /*Footer*/
 footer {
-  background-color: #1E3A8A;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+    background-color: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/*Mobile Dimensions*/
+
+@media (max-width: 760px) {
+
+    /* Navigation Bar*/
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Navigation Bar*/
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
 }
