@@ -1,3 +1,4 @@
+/* Review Page Css */
 * {
   margin: 0;
   padding: 0;
@@ -174,6 +175,8 @@ footer {
   }
 }
 
+
+/* For Phones */
 @media (max-width: 500px) {
 
   /* Navigation Bar*/

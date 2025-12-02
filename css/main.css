@@ -64,7 +64,7 @@
 
 /*Main Page*/
 .hero {
-  background: url('AssortedCorndogs.jpg') center/cover no-repeat;
+  background: url('/images/AssortedCorndogs.jpg') center/cover no-repeat;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -233,7 +233,7 @@ footer {
   }
 }
 
-
+/*For Phones*/
 @media (max-width: 500px) {
 
   /* Navigation Bar*/
