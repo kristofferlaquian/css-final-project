@@ -64,7 +64,7 @@
 
 /*Main Page*/
 .hero {
-  background: url('/images/AssortedCorndogs.jpg') center/cover no-repeat;
+  background: url('images/AssortedCorndogs.jpg') center/cover no-repeat;
   height: 40vh;
   display: flex;
   justify-content: center;
